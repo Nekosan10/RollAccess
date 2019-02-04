@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">\tRollAccess</string>
+    <string name="roll_site">\tWebアプリ(ブラウザ起動)</string>
+    <string name="roll_list">\t行動一覧(スプレッドシート又はブラウザ起動)</string>
+    <string name="roll_add">\t行動追加フォーム(ブラウザ起動)</string>
+    <string name="roll_random">\tランダムロール(ブラウザ起動)</string>
+    <string name="roll_numroll">\t行動番号指定してロール(ブラウザ起動)</string>
+    <string name="act_list">\t行動一覧リスト</string>
+    <string name="act_list_button">表示</string>
+    <string name="button">ブラウザ起動</string>
+
+</resources>
