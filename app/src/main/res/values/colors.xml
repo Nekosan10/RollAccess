@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="color_String">#3B3B3C</color>
-    <color name="color_title">#4FB7D7</color>
+    <color name="color_title">#00008b</color>
     <color name="color_toorbar_title">#FFFFFF</color>
+    <color name="color_note">#FAFAD2</color>
+    <color name="color_font">#000000</color>
 </resources>

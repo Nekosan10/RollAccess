@@ -1,12 +1,21 @@
 <resources>
     <string name="app_name">\tRollAccess</string>
-    <string name="roll_site">\tWebアプリ(ブラウザ起動)</string>
-    <string name="roll_list">\t行動一覧(スプレッドシート又はブラウザ起動)</string>
-    <string name="roll_add">\t行動追加フォーム(ブラウザ起動)</string>
-    <string name="roll_random">\tランダムロール(ブラウザ起動)</string>
-    <string name="roll_numroll">\t行動番号指定してロール(ブラウザ起動)</string>
-    <string name="act_list">\t行動一覧リスト</string>
-    <string name="act_list_button">表示</string>
+    <string name="roll_site">\tWebアプリ\t</string>
+    <string name="roll_list">\t行動データベース\t</string>
+    <string name="roll_add">\t行動追加フォーム\t</string>
+    <string name="roll_random">\tランダムロール\t</string>
+    <string name="roll_numroll">\t行動番号指定してロール\t</string>
+    <string name="act_list">\t行動一覧リスト\t</string>
+    <string name="act_list_button">\t表示\t</string>
+    <string name="credit">\tクレジット\t</string>
     <string name="button">ブラウザ起動</string>
+    <string name="thanks_2">\tこのアプリ開発で技術的に助けてくださった人達</string>
+    <string name="thanks_1">\t行動を登録して下さった方達</string>
+    <string name="specialthanks">Specialthanks</string>
+    <string name="kaihatu_blog">\tブログ：http://mi-neko-maple.hatenablog.com/</string>
+    <string name="kaihatu_twitter">\t開発者Twitter：@mi_san_cat</string>
+    <string name="kaihatu_outputTwitter">\t投稿先Twitter：@nekoneko_game</string>
+    <string name="kaihatu_name">\t開発者名：センセ(猫さん)</string>
+    <string name="kaihatu">開発者情報</string>
 
 </resources>

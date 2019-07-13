@@ -1,7 +1,6 @@
 package com.sense.rollaccess;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private Button button1, button2, button3, button4, button5, button6;
+    private Button button1, button2, button3, button4, button5, button6, button7;
     private Intent intent;
     private String url;
 
@@ -31,12 +30,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button4 = (Button) findViewById(R.id.button4);
         button5 = (Button) findViewById(R.id.button5);
         button6 = (Button) findViewById(R.id.button6);
+        button7 = (Button) findViewById(R.id.button7);
         button1.setOnClickListener(this);
         button2.setOnClickListener(this);
         button3.setOnClickListener(this);
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
         button6.setOnClickListener(this);
+        button7.setOnClickListener(this);
     }
 
     @Override
@@ -68,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 intent = new Intent(this, ListActivity.class);
                 startActivity(intent);
                 break;
+            case R.id.button7:
+                intent = new Intent(this, CreditActivity.class);
+                startActivity(intent);
+                break;
             default:
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 break;
@@ -75,7 +80,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void appget() {
-        intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        intent = new Intent(this, Web_view.class);
+        intent.putExtra("URL", url);
         startActivity(intent);
     }
 

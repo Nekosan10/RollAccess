@@ -4,7 +4,6 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -15,6 +14,7 @@ import android.widget.ListView;
 
 public class ListActivity extends AppCompatActivity {
     private Context context;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -49,8 +49,7 @@ public class ListActivity extends AppCompatActivity {
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 String url = "https://script.google.com/macros/s/AKfycbx_ALLHlr3csroTShZPEk8Q7t_98pBVs1qNyj0izxc7SDf2Qg/dev?roll=app" + (i + 1);
-                                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
-                                startActivity(intent);
+                                listdone(url);
                             }
                         });
                 // AlertDialogのNoボタンのコールバックリスナーを登録
@@ -71,5 +70,10 @@ public class ListActivity extends AppCompatActivity {
 
     }
 
+    public void listdone(String url) {
+        Intent intent = new Intent(this, Web_view.class);
+        intent.putExtra("URL", url);
+        startActivity(intent);
+    }
 
 }
